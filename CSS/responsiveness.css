@@ -1,0 +1,71 @@
+/*------------------------------- Media Query for screen size of 500px --------------------------*/
+@media only screen and (max-width: 520px) {
+  main .blog {
+    height: 125vh;
+  }
+
+  .site-content .post-content > .post-image .post-info {
+    display: none;
+  }
+
+  /*----------------------------------------- Footer div -------------------------------*/
+  footer.footer .container {
+    padding: 1rem 0.9rem !important;
+  }
+
+  .copyright {
+    padding: 0 1.4rem;
+    text-align: center;
+  }
+
+  /*---------------------------------- Toggle-collapse ---------------------------------*/
+  .nav .toggle-collapse {
+    width: 80%;
+  }
+}
+
+/*--------------------------------- Media Query for screen size 750px  -------------------------*/
+@media only screen and (max-width: 750px) {
+  /*----------------------------- Nav Nav-menu -------------------------*/
+  .nav .nav-menu,
+  nav .nav-items {
+    flex-direction: column;
+  }
+
+  /*---------------- Nav toggle Collapse ---------------------------*/
+  .nav .toggle-collapse {
+    display: initial;
+  }
+
+  /*---------------------- Main-site content -----------------------------*/
+  main .site-content {
+    grid-template-columns: 100%;
+  }
+
+  /*--------------------------------- Footer -----------------------------*/
+  footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+/*------------ Media Query Max-width 1120 screen size ---------------------*/
+@media only screen and (max-width: 1120px) {
+  /*-------------------------- Post-image post-info -------------------*/
+  main .site-content .post-content > .post-image .post-info {
+    left: 2rem;
+    bottom: 1.2rem;
+    border-radius: 0%;
+  }
+
+  /*------------------------- Popular Post ------------------------*/
+  main .site-content .sidebar .popular-post .post-info {
+    display: none;
+  }
+
+  /*------------------------------- Footer ---------------------------*/
+  footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

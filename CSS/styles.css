@@ -1,0 +1,560 @@
+@import url('../CSS/font.css');
+@import url('../CSS/variables.css');
+@import url('../CSS/responsiveness.css');
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*----------------------- GLOBAL CLASSES -----------------------------*/
+.container {
+  margin: 0 5vw;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+p {
+  font-family: var(--Lexend);
+  color: var(--text-light);
+}
+
+h1 {
+  font-family: var(--Lexend);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--Livvic);
+}
+
+h3 {
+  font-family: var(--Livvic);
+  font-size: 1.3rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  background: var(--sky);
+  font-family: var(--Livvic);
+}
+
+span {
+  font-family: var(--Abel);
+}
+
+/*---------------------------- Nav --------------------------------*/
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+
+/*------------------------------- Nav-menu ------------------------*/
+.nav-menu {
+  justify-content: space-between;
+}     
+
+/*---------------- Nav toggle Collapse ---------------------------*/
+.nav .toggle-collapse {
+  position: absolute;
+  cursor: pointer;
+  width: 85%;
+  top: 0%;
+  display: none;
+}
+
+/*--------------------------- Nav Toggle-Icon ----------------------*/
+.nav .toggle-collapse .toggle-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+/*--------------------------- Nav Toggle-Icon i ----------------------*/
+.nav .toggle-collapse .toggle-icon i {
+  font-size: 1.5rem;
+  color: var(--text-gray);
+}
+
+/*----------------------- Defined IN Javascript File ------------------------*/
+/*------------------------------------ Collapse --------------------------*/
+.collapse {
+  height: 30rem;
+}
+
+/*--------------------------- Nav-items --------------------------*/
+.nav-items {
+  display: flex;
+  margin: 0;
+}
+
+/*------------------ Nav Nav-items Navb-link ----------------------*/
+.nav .nav-items .nav-link {
+  position: relative;
+  padding: 1.6rem 1rem;
+  font-size: 1rem;
+  font-family: var(--Abel);
+}
+
+/*----------- Nav Nav-items Navb-link hover state ----------------------*/
+.nav .nav-items .nav-link:hover {
+  background-color: var(--midnight);
+}
+
+/*----------- Nav Nav-items Navb-link hover state a ----------------------*/
+.nav .nav-items .nav-link:hover a {
+  color: var(--white-color);
+}
+
+/*------------------------ Nav Social-Icons -----------------------*/
+.nav .social-icons {
+  padding: 1.4rem 0;
+}
+
+/*------------------------ Nav Social-Icons I -----------------------*/
+.nav .social-icons i {
+  padding: 0 0.2rem;
+}
+
+/*------------------------ Nav Social-Icons I hover state -----------------------*/
+.nav .social-icons i:hover {
+  color: #a1c4cf;
+}
+
+/*---------------- Nav nav-brand a --------------------------------*/
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: var(--Lexend);
+}
+
+/*---------------------------------- Main Site Section ---------------------------*/
+main .site-background {
+  background: url('../IMG/assets/Background-image.png');
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+/*---------------------------------- Main Site Section site-title ---------------------------*/
+main .site-background .site-title {
+  padding-top: 10rem;
+  color: var(--white-color);
+  text-align: center;
+}
+
+/*------------------------------ Main Site Section site-title h1,h3 ------------------------*/
+main .site-title h1,
+h3 {
+  margin: 0.3rem;
+}
+
+/*------------------------------ Main Site Section site-title btn -------------------------*/
+main .site-title .btn {
+  margin: 1.8rem;
+}
+
+/*------------------------------ Main Site Section site-title btn hover state -------------------------*/
+main .site-title .btn:hover {
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  background: transparent;
+}
+
+/*---------------------------------- Blog Carousel Section  ------------------------------*/
+main .blog {
+  background: url('../IMG/assets/Abract01.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 110vh;
+  width: 100%;
+}
+
+/*--------------------------------- Blog-Post ------------------------*/
+main .blog .blog-post {
+  padding-top: 6rem;
+}
+
+/*--------------------------- Blog-Content ---------------------------*/
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------- Blog-title ---------------------------*/
+main .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+/*-------------------------------- Btn-blog -----------------------------*/
+main .blog-content .btn-blog {
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+
+/*-------------------------------- Btn-blog Span -----------------------------*/
+main .blog-content span {
+  display: block;
+}
+
+/*-------------------------------------- Owl-Nav ------------------------------*/
+section .container .owl-nav {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+}
+
+/*-------------------------- Owl Nav Prev & Next -------------------------------*/
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  background: transparent;
+  color: var(--text-gray);
+  font-size: 2rem;
+}
+
+.owl-theme .owl-nav[class*='owl-']:hover {
+  background: transparent;
+  color: var(--text-gray);
+}
+
+.owl-theme .owl-nav[class*='owl-'] {
+  outline: none;
+}
+
+/*-------------------------------------- Site Content ----------------------------------*/
+main .site-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+/*------------------------------------ post-content ------------------------*/
+main .post-content {
+  width: 100%;
+}
+
+/*------------------------------------ Post Title -------------------------*/
+main .site-content .post-content > .post-image,
+.post-title {
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+/*----------------------------------- Post Info ----------------------------*/
+main .site-content .post-content > .post-image .post-info {
+  background: var(--sky);
+  padding: 0.3rem;
+  position: absolute;
+  bottom: 0%;
+  left: 16vw;
+  border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-content > div {
+  overflow: hidden;
+}
+
+/*------------------------------- post-image Img -------------------------------*/
+main .site-content .post-content > .post-image .img {
+  width: 100%;
+  transition: all 1s ease;
+}
+
+/*---------------------------- post-image Img hover state -----------------------*/
+main .site-content .post-content > .post-image .img:hover {
+  transform: scale(0.95);
+}
+
+/*---------------------------------- post-info span -------------------------------*/
+main .site-content .post-content > .post-image .post-info span {
+  margin: 0.5rem;
+}
+
+/*---------------------------------- Post-title a -----------------------------*/
+Main .site-content .post-content > .post-title a {
+  font-size: 1.5rem;
+  font-family: var(--Anton);
+}
+
+/*------------------------------- Post-btn --------------------------------------*/
+main .site-content .post-content > .post-title .post-btn {
+  background: var(--sky);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0;
+}
+
+/*------------------------------------- Pagination -----------------------------*/
+.site-content .pagination {
+  justify-content: center;
+  margin: 4rem 0;
+  color: var(--text-gray);
+}
+
+/*---------------------------------- Pagination a ------------------------------*/
+.site-content .pagination a {
+  padding: 0.6rem 0.9rem;
+  margin: 0.3rem;
+  font-family: var(--Lexend);
+  border-radius: 2rem;
+}
+
+/*----------------------- pagination click-buttons -----------------------------*/
+.site-content .pagination .click-buttons {
+  background: var(--text-gray);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.site-content .pagination .click-buttons:hover {
+  background: teal;
+  color: #ffffff;
+}
+
+/*------------------------ Sidebar Category-items -------------------------------*/
+.site-content > .sidebar .category-items {
+  font-family: var(--Livvic);
+}
+
+/*---------------------------- Category-items List-items ------------------------*/
+.site-content > .sidebar .category-items .list-items {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  margin: 0.8rem 0;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  border-radius: 3rem;
+}
+
+/*---------------------------- Category-items List-items ------------------------*/
+.site-content > .sidebar .category-items .list-items a {
+  color: var(--bg-color);
+}
+
+/*------------------------------------- Post-content -----------------------------*/
+.site-content .sidebar .popular-post .post-content {
+  padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2 {
+  padding-top: 8rem;
+}
+
+/*----------------------------- Popular-post Post info -----------------------------*/
+.site-content .sidebar .popular-post .post-info {
+  background: var(--sky) !important;
+  padding: 0.2rem 0.1rem !important;
+  border-radius: 0rem !important;
+  bottom: 0rem !important;
+  color: #000000;
+  font-size: 0.6rem !important;
+  left: 2rem !important;
+  width: 80%;
+}
+
+/*------------------------ Popular-post IMG ---------------------------------*/
+.site-content .sidebar .popular-post #img {
+  padding-bottom: 0.2rem;
+  width: 115% !important;
+  left: 0.2rem;
+}
+
+/*----------------------------- Newletter --------------------------------*/
+.site-content .sidebar .newsletter {
+  padding-top: 10rem;
+}
+
+/*------------------------ Form Element ----------------------------------*/
+.site-content .sidebar .newsletter .form-element {
+  padding: 0.5rem 2rem;
+}
+
+/*---------------------------------- Input element ------------------------*/
+.site-content .sidebar .newsletter .form-element .input-element {
+  width: 80%;
+  height: 1.9rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  font-family: var(--Lexend);
+}
+
+/*-------------------------- Input Focus state --------------------------*/
+.site-content .sidebar .newsletter .form-element .input-element:focus {
+  outline: none;
+}
+
+/*------------------------------ Form btn ------------------------------*/
+.site-content .sidebar .newsletter .form-element .form-btn {
+  background: var(--sky);
+  padding: 0.8rem 32%;
+  margin: 1rem 0;
+  border-radius: 0;
+  font-family: var(--Abel);
+  transition: 0.1s ease-in;
+}
+
+/*------------------------- Btn hover state ----------------------------*/
+.site-content .sidebar .newsletter .form-element .form-btn:hover {
+  transform: scale(0.98);
+}
+
+/*-------------------------- Popular tags ------------------------------*/
+.site-content .sidebar .popular-tags {
+  padding: 4rem 0;
+}
+
+/*--------------------------- .tags .tag -------------------------------*/
+.site-content .sidebar .popular-tags .tags .tag {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  margin: 0.4rem 0.6rem;
+  border-radius: 3rem;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+/*------------------------ .tags .tag hover state ------------------------*/
+.site-content .sidebar .popular-tags .tags .tag:hover {
+  transform: scale(0.98);
+  background: #20b2aa;
+  color: var(--white-color);
+}
+
+/*-------------------------------- Footer section -------------------------------------*/
+/*----------------------------- Footer -----------------------------*/
+footer.footer {
+  height: 100%;
+  position: relative;
+  background: var(--bg-color);
+}
+
+/*---------------------------- Container ---------------------------*/
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*------------------------ All div --------------------------*/
+footer.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem;
+}
+
+/*---------------------- About-Us h2 -----------------------------*/
+footer.footer .container h2 {
+  color: var(--white-color);
+}
+
+/*-------------------------- Form-element ------------------------*/
+footer.footer .newsletter .form-element {
+  display: inline-block;
+  background: black;
+}
+
+/*------------------- Form-element input ---------------------------*/
+footer.footer .newsletter .form-element input {
+  padding: 0.5rem 0.7rem;
+  background: white;
+  font-size: 1rem;
+  display: inline-block;
+  font-family: var(--Josefin);
+  width: 74%;
+  border: none;
+  color: var(--white-color);
+}
+
+/*-------------------------- Input span -----------------------------*/
+footer.footer .newsletter .form-element span {
+  background: var(--sky);
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/*----------------------------- Instagram Img -------------------------*/
+footer.footer .instagram div > img {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  margin: 0.3rem 0.4rem;
+}
+
+/*---------------------------- Follows us Icons ------------------------*/
+footer.footer .follow > div i {
+  color: var(--white-color);
+  padding: 0 0.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/*------------------------ Icon hover state ----------------------------*/
+footer.footer .follow > div i:hover {
+  color: #047aed;
+}
+
+/*-------------------------------- Copyright ---------------------------*/
+footer.footer .copyright {
+  justify-content: center;
+  font-family: var(--Josefin);
+}
+
+/*------------------------------- Copyright Link -----------------------*/
+footer.footer .copyright h4 a {
+  color: var(--white-color);
+}
+
+/*------------------------------- auto-scroll-up ------------------------*/
+footer.footer .auto-scroll-up {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+}
+
+/*----------------------- auto-scroll-up span -----------------------------*/
+footer.footer .auto-scroll-up span {
+  color: var(--midnight);
+}
+
+/*-------------- auto-scroll-up span hover state --------------------------*/
+footer.footer .auto-scroll-up span:hover {
+  color: var(--white-color);
+  cursor: pointer;
+}

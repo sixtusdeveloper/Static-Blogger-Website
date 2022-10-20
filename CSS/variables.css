@@ -1,0 +1,18 @@
+/*---------------------- Theme Font-family ----------------------------*/
+:root {
+  --Abel: Abel, cursive;
+  --Anton: Anton, cursive;
+  --Josefin: Josefin_Sans, cursive;
+  --Lexend: Lexend_Deca, cursive;
+  --Livvic: Livvic, cursive;
+
+  /*---------------------------- Theme colors --------------------------*/
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --midnight: #104f55;
+  --white-color: #ffffff;
+
+  /*--------------------------- Gradient Color -------------------------*/
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
