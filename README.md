@@ -19,3 +19,4 @@ Inside the root folder, you can optionally create five(5) sub-folders.
 5. The fifth sub-folder would be named IMG.
 Note: You are free to customize all of these the way you prefer if you know what you are doing.
 => Copy the code from each file and paste it to your ready created files respectively and everything should work as expected.
+![Blogger-screenshot-1](https://user-images.githubusercontent.com/80200124/197270703-76dba9a8-42cb-4cf3-bf90-a57413cc68af.png)
