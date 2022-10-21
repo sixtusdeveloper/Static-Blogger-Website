@@ -21,3 +21,5 @@ Note: You are free to customize all of these the way you prefer if you know what
 => Copy the code from each file and paste it to your ready created files respectively and everything should work as expected.
 
 ![Blogger-screenshot-2](https://user-images.githubusercontent.com/80200124/197285800-b4e216c2-f7e3-45ee-acd5-5093715b5dfe.png)
+
+Check out the site on the web: https://myblogposts.netlify.app
